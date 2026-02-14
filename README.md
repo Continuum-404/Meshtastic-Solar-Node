@@ -12,13 +12,13 @@ Solar-betriebener Low-Power Node auf Basis von **Seeed Studio XIAO nRF52840** + 
 
 ## Überblick
 
-**Solar Node** ist primär eine autarke **Meshtastic-Node** für den Outdoor-Einsatz. Die Energie kommt von einem Solarpanel, das über einen **TP5000** einen **LiFePO₄-Akku (32700)** lädt. Ein **TI TPS61023DRLR** erzeugt daraus eine stabile **5-V-Versorgung** für **XIAO nRF52840** und **Wio-SX1262**. Über einen Power-Schalter lässt sich die 5-V-Schiene (und damit die Meshtastic-Hardware) deaktivieren.
+Die **Solar Node** ist primär eine autarke **Meshtastic-Node** für den Outdoor-Einsatz. Die Versorgungstellt ein Solarpanelsicher, das über einen **TP5000** einen **LiFePO₄-Akku (32700)** lädt. Der **TI TPS61023DRLR** erzeugt daraus eine stabile **5-V-Versorgung** für den **XIAO nRF52840** und den **Wio-SX1262**. Über einen Power-Schalter lässt sich die 5-V-Schiene (und damit die Meshtastic-Hardware) deaktivieren.
 
 Zusätzliche Sensorik kann optional über **I²C** angebunden werden.
 
 Zur Überwachung der Energieflüsse werden zwei **INA219** verwendet:
-- **INA219 #1:** misst **Ladespannung** und **Ladestrom** (Solar/TP5000 → Akku).
-- **INA219 #2:** misst **Batteriespannung** sowie den **Stromverbrauch der Meshtastic-Hardware**.
+- **INA219 (0x40):** misst **Ladespannung** und **Ladestrom** (Solar/TP5000 → Akku).
+- **INA219 (0x41):** misst **Batteriespannung** sowie den **Stromverbrauch der Meshtastic-Hardware**.
 
 Der **interne Laderegler** des **XIAO nRF52840** wird **nicht** genutzt; entsprechend bleibt auch der **Batterieanschluss** am XIAO unbenutzt. Akkudaten stammen ausschließlich aus den Messwerten der **INA219**.
 
