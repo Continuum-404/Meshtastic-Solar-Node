@@ -10,7 +10,6 @@ Dieses How-To zeigt dir, wie du unter **Windows** die **Meshtastic CLI** install
 ## Inhalt
 
 - [Voraussetzungen](#voraussetzungen)
-- [Repo-Struktur](#repo-struktur)
 - [Installation (Windows PowerShell)](#installation-windows-powershell)
 - [Wichtig: Platzhalter in der Config anpassen](#wichtig-platzhalter-in-der-config-anpassen)
 - [Private Key neu erzeugen (Web Client)](#private-key-neu-erzeugen-web-client)
@@ -28,19 +27,6 @@ Dieses How-To zeigt dir, wie du unter **Windows** die **Meshtastic CLI** install
 - **Python 3** installiert
 - Meshtastic-Node per **USB** verbunden (erscheint als **COM-Port**)
 - Optional: Geräte-Manager (zum Port finden)
-
----
-
-## Repo-Struktur
-
-Empfohlene Struktur:
-
-```text
-.
-├─ README.md
-└─ configs/
-   └─ solar_config.yaml
-```
 
 ---
 
@@ -71,7 +57,7 @@ meshtastic --help
 
 ## Wichtig: Platzhalter in der Config anpassen
 
-In `configs/solar_config.yaml` müssen Nutzer **mindestens** folgende Werte anpassen.  
+In `04_Config/solar_config.yaml` müssen Nutzer **mindestens** folgende Werte anpassen.  
 Die untenstehenden Werte sind **nur Beispiele**.
 
 ### Location anpassen
