@@ -32,8 +32,8 @@ Der **interne Laderegler** des **XIAO nRF52840** wird **nicht** genutzt; entspre
 - 🔋 **TP5000** LiFePO4 Solar-Laderegler (1S)
 - ⚡ **TI TPS61023DRLR** Boost-Regler (**5V aus Akku-Spannung**)
 - 🔌 **Power-Schalter**: deaktiviert TPS61023DRLR → **5V OFF** → MCU/LoRa OFF
-- 📡 **LoRa (SX1262)** via **Wio-SX1262**
-- 🧠 **nRF52840** via **Seeed XIAO nRF52840**
+- 📡 **Seeed Wio-SX1262**
+- 🧠 **Seeed XIAO nRF52840**
 - 🔌 **I²C-Erweiterungsanschluss** (ausgeführt)
 - 🧩 **SMD-Design**
 
