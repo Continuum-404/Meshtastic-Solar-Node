@@ -1,15 +1,20 @@
 # Benötigte zusätzliche Komponenten
+## Wichtige Hinweise
+
+- Die Komponenten **7** und **8** sind optional und können je nach Bedarf angepasst oder ersetzt werden.
+- **Achtung:** Das System ist ausschließlich für einen **LiFePO₄-Akku** ausgelegt. **LiPo-** oder **Li-Ion-Akkus dürfen nicht verwendet werden.**
+
 
 ## Stückliste (Auszug)
 
 | Lfd Nr. | Artikel | Bezug |
 | ---: | --- | --- |
-| 1 | Industriegehäuse, 150 x 100 x 60mm, IP66/IP68, lichtgrau | BOX4U Industriegehäuse, 150 x 100 x 60mm, IP66/IP68, lichtgrau \| Flanschgehäuse günstig kaufen \| reichelt elektronik |
-| 2 | 32700 3.2V 6000mAh LiFePO4 | EREMIT 32700 Li Iionen LiFePo4 Wiederaufladbar |
-| 3 | LifePO4 1S 3.2V Schutzschaltung BMS 2.5A | LifePO4 1S 3.2V Schutzschaltung BMS 2.5A - EREMIT |
-| 4 | JST Stecker 2,5mm | JST Stecker - EREMIT |
-| 5 | 3.2V 1A LiFePO4 Ladegerät / TP5000 | EREMIT 3.7V 3.2V LiFePO4 Charger / Ladegerät 1A |
-| 6 | Entlüftungsschraube | Entlüftungsschraube, staubdicht, wasserdicht, IP68, M12 x 1,5, Druckreduzierventil, Beleuchtungsentlüftungsstopfen für Feuchtigkeits- und Druckkontrolle, Entlüftungsschraube für elektrische : Amazon.de: Auto & Motorrad |
-| 7 | U.F.L1 zu N Typ Buchse | Vecys 2PCS U.F.L1 zu N Typ Buchse Low Loss Koaxialkabel 6&quot; /15CM U.F.L1 RG178 Koaxial Pigtail Kabel für Wireless Router Mini PCIE Netzwerkkarten PCI Wi-Fi WAN Repeater : Amazon.de: Computer & Zubehör |
-| 8 | 8W Solarpanel | 8W Solarpanel für Überwachungskamera Aussen Akku, Solarmodul für DC 5V Outdoor Akku Kamera, USB-C und DC 3.5mm Adapter, IP65 Wasserdicht, Solarpanel kompatibel mit Eufy, Eufycam, Reolink, Ring, Arlo : Amazon.de: Gewerbe, Industrie & Wissenschaft |
-| 9 | XIAO nRF52840 & Wio-SX1262 Kit | Meshtastic Development Kit |
+| 1 | Industriegehäuse, 150 x 100 x 60mm, IP66/IP68, lichtgrau | [BOX4U Industriegehäuse](https://www.reichelt.de/de/de/shop/produkt/industriegehaeuse_150_x_100_x_60mm_ip66_ip68_lichtgrau-340608?nbc=1) |
+| 2 | 32700 3.2V 6000mAh LiFePO4 | [EREMIT 32700 Li Iionen LiFePo4](https://www.eremit.de/p/32700-3-2v-6000mah-lifepo4)|
+| 3 | LifePO4 1S 3.2V Schutzschaltung BMS 2.5A | [LifePO4 1S 3.2V Schutzschaltung BMS 2.5A - EREMIT](https://www.eremit.de/p/lifepo4-1s-3-2v-schutzschaltung-bms-2-5a) |
+| 4 | JST Stecker 2,5mm | [JST Stecker - EREMIT](https://www.eremit.de/p/jst-stecker-jst-xh-2-5mm) |
+| 5 | 3.2V 1A LiFePO4 Ladegerät / TP5000 | [EREMIT 3.7V 3.2V LiFePO4 Charger / Ladegerät 1A](https://www.eremit.de/p/3-2v-1a-lifepo4-ladegeraet-tp5000) |
+| 6 | Entlüftungsschraube | [Entlüftungsschraube](https://www.amazon.de/dp/B0G2CKDBH9?ref=ppx_yo2ov_dt_b_fed_asin_title) |
+| 7 | U.F.L1 zu N Typ Buchse | [Vecys 2PCS U.F.L1 zu N Typ Buchse](https://www.amazon.de/dp/B09PTXVJNH?ref=ppx_yo2ov_dt_b_fed_asin_title&th=1) |
+| 8 | 8W Solarpanel | [8W Solarpanel](https://www.amazon.de/dp/B0FX2G9CW6?ref=ppx_yo2ov_dt_b_fed_asin_title&th=1) |
+| 9 | XIAO nRF52840 & Wio-SX1262 Kit | [Meshtastic Development Kit]( https://www.seeedstudio.com/XIAO-nRF52840-Wio-SX1262-Kit-for-Meshtastic-p-6400.html)|
