@@ -9,7 +9,9 @@ Solar-betriebener Low-Power Node auf Basis von **Seeed Studio XIAO nRF52840** + 
 
 ## Überblick
 
-**Solar Node** ist ein autarker Outdoor-Knoten für Sensorik/Telemetrie über LoRa. Energie kommt von einem Solarpanel, geladen über **TP5000** in einen **LiFePO4 32700** Akku. Ein **TI TPS61023DRLR** erzeugt daraus eine **5V-Schiene**, an der **XIAO nRF52840** und **Wio-SX1262** hängen. Über einen Power-Schalter kann der Boost-Regler deaktiviert werden, wodurch **MCU + LoRa vollständig stromlos** sind.
+Die **Solar Node** ist primär eine autarke **Meshtastic-Node** für den Outdoor-Einsatz. Die Energie kommt von einem Solarpanel, das über einen **TP5000** einen **LiFePO₄-Akku (32700)** lädt. Ein **TI TPS61023DRLR** erzeugt daraus eine stabile **5-V-Versorgung** für **XIAO nRF52840** und **Wio-SX1262**. Über einen Power-Schalter lässt sich die 5-V-Schiene (und damit die Meshtastic-Hardware) deaktivieren.
+
+Zusätzliche Sensorik kann optional über **I²C** angebunden werden.
 
 ---
 
