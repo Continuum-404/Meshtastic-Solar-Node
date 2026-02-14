@@ -4,17 +4,17 @@ Solar-betriebener Low-Power Node auf Basis von **Seeed Studio XIAO nRF52840** + 
 
 **Hardware-Design (OSHWLab/EasyEDA):** https://oshwlab.com/continuum/solar-node
 
-> Ziel: Autarker Outdoor-Knoten (Sensorik/Telemetrie/LoRa), robust, stromsparend und einfach reproduzierbar.
-
 ---
 
 ## Highlights
 
-- ☀️ **Solar + Akku (LiFePO4 32700)** für autarken Betrieb
+- ☀️ **Solar + LiFePO4 32700** für autarken Outdoor-Betrieb
+- 🔋 **TP5000** LiFePO4 Solar-Laderegler (1S)
+- ⚡ **TI TPS61023DRLR** Boost-Regler (**5V aus Akku-Spannung**)
 - 📡 **LoRa (SX1262)** via Wio-SX1262 Modul
-- 🧠 **nRF52840** (XIAO Formfaktor) für Low-Power Anwendungen
-- 🔌 Erweiterbar über **I²C / SPI / UART / GPIO** (je nach Layout/Bestückung)
-- 🧾 Fertigungsdaten & Projektdateien über OSHWLab/EasyEDA
+- 🧠 **nRF52840** (XIAO Formfaktor) für stromsparende Anwendungen
+- 🔌 **I²C-Erweiterungsanschluss** (ausgeführt) für Sensoren/Peripherie
+- 🧩 **SMD-Design** (für einfache Fertigung/Assembly)
 
 ---
 
@@ -24,29 +24,44 @@ Solar-betriebener Low-Power Node auf Basis von **Seeed Studio XIAO nRF52840** + 
 - **MCU:** Seeed Studio **XIAO nRF52840**
 - **LoRa:** Seeed **Wio-SX1262**
 - **Akku:** **32700 LiFePO4**, **3.2V**, **6000mAh**
-- **Solar:** _[Panel-Spezifikation bitte ergänzen: z. B. 6V/1W]_
-- **Laden/Power-Path/Regler:** _[bitte ergänzen – IC/Topologie]_
-- **Sensoren:** _[optional – bitte ergänzen]_
+- **Solar-Laderegler:** **TP5000** (1S LiFePO4)
+- **5V-Regler:** **TPS61023DRLR** (Boost, 5V)
+- **Erweiterung:** **I²C** (Header/Anschluss auf PCB)
 
-### Stromversorgung (Kurzbeschreibung)
-Solarpanel → Lade/Power-Management → LiFePO4 32700 → Regler/Power-Path → XIAO nRF52840 + Wio-SX1262
+### Stromversorgung (Übersicht)
+Solarpanel → TP5000 (Laden/Power) → LiFePO4 32700 → TPS61023 (5V) → Verbraucher (z. B. Sensoren/Peripherie)  
+MCU/LoRa laufen je nach Auslegung direkt am Akku/Reglerpfad.
 
-> Wenn du mir den Lade-IC/PMIC nennst, trage ich das sauber mit typischen Spannungen/Strömen ein.
+> Wenn du mir sagst, ob MCU/LoRa **direkt an VBAT** hängen oder über einen separaten Regler, kann ich das Diagramm exakt machen.
 
 ---
 
-## Repo-Struktur (Vorschlag)
+## Komponentenliste / Kosten
 
+Eine laufende Liste der benötigten Komponenten inkl. Bezugsquellen:
+- Google Sheet: https://docs.google.com/spreadsheets/d/10DE-c9x9UDSqj9JYPvdJV23CFt0LOcdHYuGjifVPPIo/edit?usp=sharing :contentReference[oaicite:1]{index=1}
+
+**Hinweis:** Im Sheet ist aktuell eine Gesamtsumme von **142,51 €** aufgeführt (Stand der Liste). :contentReference[oaicite:2]{index=2}
+
+---
+
+## Fertigung
+
+- **SMD:** ja
+- **Gerber Export:** über OSHWLab/EasyEDA (Fabrication Output → Gerber)
+- **BOM / Pick&Place:** optional (falls du im Repo ablegen willst: `hardware/bom/` und `hardware/pick-place/`)
+
+Empfohlene Repo-Struktur:
 ```text
 .
 ├─ hardware/
 │  ├─ gerber/
 │  ├─ bom/
 │  ├─ pick-place/
-│  └─ docs/               # Schaltplan, Renderings, Assembly Notes
+│  └─ docs/
 ├─ firmware/
-│  ├─ config/             # config datei(en) für CLI
-│  └─ tools/              # helper scripts (optional)
+│  ├─ config/
+│  └─ tools/
 ├─ docs/
 │  └─ images/
 └─ README.md
