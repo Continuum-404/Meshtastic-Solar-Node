@@ -1,7 +1,9 @@
 # Benötigte zusätzliche Komponenten
 ## Wichtige Hinweise
 
-- Die Komponenten **7** und **8** sind optional und können je nach Bedarf angepasst oder ersetzt werden.
+>  [!NOTE]
+> Die Komponenten **7** und **8** sind optional und können je nach Bedarf angepasst oder ersetzt werden.
+
 > [!CAUTION]
 >  Das System ist ausschließlich für einen **LiFePO₄-Akku** ausgelegt. **LiPo-** oder **Li-Ion-Akkus dürfen nicht verwendet werden.**
 
