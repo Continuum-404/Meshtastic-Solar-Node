@@ -3,7 +3,7 @@
 Solar-betriebener Low-Power Node auf Basis von **Seeed Studio XIAO nRF52840** + **Wio-SX1262 (LoRa)**, ausgelegt für den Betrieb mit **LiFePO4 32700 (3.2V / 6000mAh)**.
 
 - Hardware-Design (OSHWLab/EasyEDA): https://oshwlab.com/continuum/solar-node
-- Bitte beachtet die "Zusätzliche Komponenten" in der [Stückliste.md](https://github.com/Continuum-404/Meshtastic-Solar-Node/blob/f5185b9bc00687749a348a88bba81b0c195340d9/St%C3%BCckliste.md)
+- Bitte beachtet die "Zusätzliche Komponenten" in der [Stückliste.md](https://github.com/Continuum-404/Meshtastic-Solar-Node/blob/c3fc9a9dcc2af69ebf1b37c7b7867563f2b57b59/St%C3%BCckliste.md)
 
 ---
 
