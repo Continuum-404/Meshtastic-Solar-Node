@@ -12,7 +12,7 @@ Solar-betriebener Low-Power Node auf Basis von **Seeed Studio XIAO nRF52840** + 
 
 ## Überblick
 
-Die **Solar Node** ist primär eine autarke **Meshtastic-Node** für den Outdoor-Einsatz. Die Versorgungstellt ein Solarpanelsicher, das über einen **TP5000** einen **LiFePO₄-Akku (32700)** lädt. Der **TI TPS61023DRLR** erzeugt daraus eine stabile **5-V-Versorgung** für den **XIAO nRF52840** und den **Wio-SX1262**. Über einen Power-Schalter lässt sich die 5-V-Schiene (und damit die Meshtastic-Hardware) deaktivieren.
+Die **Solar Node** ist primär eine autarke **Meshtastic-Node** für den Outdoor-Einsatz. Die Versorgung stellt ein Solarpanel sicher, das über einen **TP5000** einen **LiFePO₄-Akku (32700)** lädt (BMS). Der **TI TPS61023DRLR** erzeugt daraus eine stabile **5-V-Versorgung** für den **XIAO nRF52840** und den **Wio-SX1262**. Über einen Power-Schalter lässt sich die 5-V-Schiene (und damit die Meshtastic-Hardware) deaktivieren.
 
 > [!TIP]
 > Zusätzliche Sensorik kann optional über **I²C** angebunden werden.
