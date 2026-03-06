@@ -48,7 +48,7 @@ Solarpanel
 TP5000  (LiFePO4 Charger, 1S)
    │
    ▼
-LiFePO4 32700 (3.2V / 6000mAh)
+LiFePO4 32700 (3.2V / 6000mAh inkl. BMS)
    │
    ▼
 TPS61023DRLR  (Boost -> 5V)
