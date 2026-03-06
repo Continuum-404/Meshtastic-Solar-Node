@@ -17,7 +17,7 @@ Die **Solar Node** ist primär eine autarke **Meshtastic-Node** für den Outdoor
 > [!TIP]
 > Zusätzliche Sensorik kann optional über **I²C** angebunden werden.
 
-Zur Überwachung der Energieflüsse werden zwei **INA219** verwendet:
+Zur Überwachung der Solar Versorgung bzw der Batteriespannung werden zwei **INA219** verwendet:
 - **INA219 (0x40):** misst **Ladespannung** und **Ladestrom** (Solar/TP5000 → Akku).
 - **INA219 (0x41):** misst **Batteriespannung** sowie den **Stromverbrauch der Meshtastic-Hardware**.
 
